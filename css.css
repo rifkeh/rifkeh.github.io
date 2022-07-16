@@ -1,0 +1,277 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+}
+.menu{
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0px 1px 3px black ;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+.menu-home a, .menu-me a, .menu-school a, .menu-games a{
+    padding: 20px;
+    float: left;
+    font-size: 25px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #EB1D36;
+    text-decoration: none;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-home :hover, .menu-me :hover, .menu-school :hover, .menu-games :hover{
+    background-color: #EB1D36;;
+    color: white;
+}
+.home-top{
+    display: flex;
+    margin-top: 20px;
+}
+.image{
+    margin: 0;
+}
+.image img{
+    margin: 0px 50px 0 50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.home-top > div{
+    margin: 10px 20px 0 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.home-top h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+.home-skills{
+    margin: 0px 50px 0 auto; 
+}
+.home-skills p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+.download{
+    width: 200px;
+    background-color: #646464;
+}
+.skillsbox{
+    width: 80%;
+    margin: 0 auto 30px 0;
+    height: 30px;
+    background-color: #f4f4f4;
+}
+.skillsbox-photography{
+    margin: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #646464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+  
+}
+.btn {
+    background-color: #646464;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family:'Titillium Web', sans-serif;
+  }
+  .btn:hover {
+    background-color: #333232;
+  }
+.home-line{
+    margin: 20px auto 0 auto;
+    height: 2px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.home-top-midtext > p{
+    margin: 20px 20px 20px 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.home-top h2{
+    margin: 0 auto 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+.home-top-midtext h2{
+    margin: 50px auto 0px auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+#one{
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -40px;
+}
+#me{
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -70px;
+  }
+#games{
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -50px;   
+}
+.home-top-midtext_smp{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin: 30px 0 30px 0;
+    object-position: bottom;
+}
+.home-top-midtext_sma{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin: 30px 0 30px 0;
+    object-position: bottom;
+}
+.home-top-midtext_kuliah{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    margin: 30px 0 30px 0;
+    
+}
+.overlay{
+    width: 100%;
+    height: 250px;
+    background-color: #646464;
+    position: absolute;
+    top: 863px;
+    margin: 0px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 1px 3px black ;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-navigate{
+    margin: 0 0px 20px 0px;
+}
+.footer-navigate a, .footer-navigate h4{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.footer-navigate > div{
+    margin-bottom: 10px;
+} 
+.footer-contact{
+    margin: 0 0px 20px 0px;
+}
+.footer-contact a, .footer-contact h4{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.footer-contact div{
+    margin-bottom: 10px;
+} 
+.footer-contact img{
+    width: 20px;
+    height: 100%;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.games{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 50px;
+    padding: 10px;
+    height: 300px;
+    justify-content: center;
+    margin: 20px 0px 50px 0px;
+}
+.games  div{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s linear;
+}
+.games img{
+    position: relative;
+    top: 10px;
+    object-fit: cover;
+    width: 270px;
+    height: 260px;
+    margin: 0;
+    border: 1px solid black;
+    transition: .2s linear;
+}
+.games p{
+    position: relative;
+    top: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    transition: .2s linear;
+}
+.games-h3{
+    margin: 40px auto 0 auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+.games div:hover, .games p:hover{
+    transform: rotate(3deg);
+    transform: rotate(-3deg);
+}
+.games img:hover{
+    transform: rotate(1deg);
+}
