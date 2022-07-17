@@ -53,6 +53,7 @@ label{
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 30px 30px 30px 30px;
 }
 .slider::before{
     position: absolute;
@@ -62,7 +63,8 @@ label{
     left: 4px;
     bottom: 4px;
     background-color: white ;
-    transition: .4s;   
+    transition: .4s;  
+    border-radius: 50%; 
 } 
 input:checked + .slider {
     background-color: #2196F3;
@@ -201,6 +203,12 @@ input:checked + .slider:before {
     visibility: hidden;
     top: -50px;   
 }
+#mainmenu{
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -70px; 
+}
 .home-top-midtext_smp{
     object-fit: cover;
     width: 100%;
@@ -227,7 +235,7 @@ input:checked + .slider:before {
     height: 250px;
     background-color: #646464;
     position: absolute;
-    top: 863px;
+    top: 1563px;
     margin: 0px;
     opacity: 0;
     transition: 0.5s ease;
@@ -331,4 +339,34 @@ input:checked + .slider:before {
 }
 .games img:hover{
     transform: rotate(1deg);
+}
+.main-menu{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    flex-direction: row;
+}
+.main-menu img{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    flex-basis: 3;
+    object-fit: cover;
+}
+.main-menu div{
+    flex-basis: 1;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#readmore{
+    height: 50px;
+    width: 300px;
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    top: -50px;
 }
