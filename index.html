@@ -8,11 +8,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="menu" >
-            <div class="menu-home"><a href=""><b>Home</b></a></div>
-            <div class="menu-me"><a href="#me"><b>About Me</b></a></div>
-            <div class="menu-school"><a href="#one"><b>School</b></a></div>
-            <div class="menu-games"><a href="#games"><b>Games</b></a></div>
+        <div class="menu" id="menu">
+            <div><a href=""><b>Home</b></a></div>
+            <div><a href="#me"><b>About Me</b></a></div>
+            <div><a href="#one"><b>School</b></a></div>
+            <div><a href="#games"><b>Games</b></a></div>
+            <label class="switch">
+                <input id="check" type="checkbox">
+                <span class="slider"></span>
+            </label>
         </div>
         <div id="me"></div>
         <div class="home">
@@ -41,7 +45,7 @@
                         </div>
                         <div>
                             <p>Phyton</p>
-                            <div class="skillsbox">
+                            <div class="skillsbox phyton">
                                 <div class="skillsbox-photography" style="width: 40%;"><b>40%</b></div>
                             </div>
                         </div>
@@ -49,11 +53,8 @@
                             <button class="btn">Download My CV</button>
                         </form>
                     </div>
-                </div>
-                
+                </div>  
             </div>
-            
-            
             <div class="home-line" style="width: 700px;"></div>
             <div id="one"></div>
             <div class="home-top-midtext" style="display:flex; flex-direction: column;">
@@ -101,7 +102,7 @@
             </div>   
         </div>
         <div class="home-line" style="width: 700px;"></div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="footer-navigate">
                 <h4>Navigate</h4>
                 <div><a href="">Home</a></div>
@@ -125,5 +126,7 @@
                 </div>
             </div>
         </div>
+        <script src="java.js">
+        </script>
     </body>
 </html>
